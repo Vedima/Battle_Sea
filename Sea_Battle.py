@@ -5,7 +5,7 @@ print('Расставляет корабли Игрок')
 field_1 = Field('Player')
 field_1.print()
 while field_1.check_count():
-    data = input("Введите 1, 2 или 3 (палубность) и координаты от 0 до 5: ")
+    data = input("Введите 1, 2 или 3(палубность) и координаты начальной и конечной(если есть) точки от 0 до 5 через пробел: ")
     try:
         lData = list(map(int, data.split()))
     except:
